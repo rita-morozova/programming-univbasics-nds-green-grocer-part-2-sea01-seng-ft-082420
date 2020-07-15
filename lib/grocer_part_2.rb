@@ -3,7 +3,7 @@ require_relative './part_1_solution.rb'
 def apply_coupons(cart, coupons)
 coupons.each do |coupon|
  item_info = find_item_by_name_in_collection(coupon[:item], cart)
-  	  item_w_coupon = find_item_by_name_in_collection(coupon[:item]+" W/COUPON", cart)
+ item_w_coupon = find_item_by_name_in_collection(coupon[:item]+" W/COUPON", cart)
 end	   
 if item_w_coupon and item_info[:count] >= coupon[:num]
 	    item_w_coupon[:count] += coupon[:num]
