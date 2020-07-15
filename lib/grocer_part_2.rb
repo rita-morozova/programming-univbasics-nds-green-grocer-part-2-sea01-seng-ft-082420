@@ -20,7 +20,6 @@ coupons.each do |coupon|
   end 
   #cart.delete_if{|item_info| item_info[:count] <= 0}
   cart
- 
 end
 
 def apply_clearance(cart)
